@@ -134,6 +134,8 @@ FROM PopulationVsVaccination
 
 -- Looking at Total Population Vs Vaccination on Rolling People Vaccination
 
+--- Using CTE
+
 WITH PopulationVsVaccination (continent, location, date, population, new_vaccinations, RollingPeopleVaccinated) 
 		AS(
 SELECT Dea.continent, Dea.location, Dea.date, Dea.population, Vac.new_vaccinations,
